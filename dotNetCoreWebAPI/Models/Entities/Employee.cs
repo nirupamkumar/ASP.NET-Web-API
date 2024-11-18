@@ -1,7 +1,10 @@
-﻿namespace dotNetCoreWebAPI.Models.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace dotNetCoreWebAPI.Models.Entities
 {
     public class Employee
     {
+        [Key]
         public int GuId { get; set; }
         public required string Name { get; set; }
         public required string Email { get; set; }
